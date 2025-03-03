@@ -1,0 +1,30 @@
+{
+    "name": "MedusaB2B",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "backend",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dotenv.dotenv-vscode",
+                "yoavbls.pretty-ts-errors",
+                "github.vscode-github-actions",
+                "ms-azuretools.vscode-docker",
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "GitHub.vscode-pull-request-github",
+                "dbaeumer.vscode-eslint@3.0.5"
+            ]
+        }
+    },
+    "containerEnv": {
+        "FORCE_COLOR": "1"
+    },
+    "remoteUser": "node",
+    "forwardPorts": [
+        9000,
+        5432,
+        6379
+    ]
+}
